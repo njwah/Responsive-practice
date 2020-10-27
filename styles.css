@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: gray;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--primary-color);
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+p {
+    margin: 10px 0;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    background-color: skyblue;
+    color: white;
+    height: 70px;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .flex {
+    
+    justify-content: space-between;
+}
+
+.navbar a{
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px white solid;
+}
+
+.showcase{
+    height: 400px;
+    background-color: #FFF5EE;
+    position: relative;
+    padding-top: 50px;
+}
+
+.showcase h1{
+    font-size: 40px;
+}
+
+.showcase p{
+    margin: 20px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: visible;
+}
+.showcase .grid{
+    gap: 40px;
+    overflow: visible;
+}
+
+.card {
+    background-color: #c1bbdd;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px gray;
+    padding: 40px;
+    margin: 20px;
+}
+
+
+.showcase-form{
+    position: relative;
+    height: 350px;
+    z-index: 100;
+    width: 400px;
+    font-size: 20px;
+}
+
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'] {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: #c1bbdd;
+    width: 100%;
+}
+
+.showcase-form input[type='text']:focus {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: #c1bbdd;
+    width: 100%;
+}
+.showcase-form input[type='email'] {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: #c1bbdd;
+    width: 100%;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+
+.btn {
+    border: none;
+    background-color: var(--primary-color);
+    color:white; 
+    padding: 10px 30px; 
+    border-radius: 10px;
+}
+
+.btn:hover {
+    transform: scale(.98);
+    cursor: pointer;
+}
